@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-js嵌入页面的方式</title>
+	<!-- 三种方式从上到下依次进行 -->
+	<!-- 第三种嵌入js的方式：外链式 -->
+	<script type="text/javascript" src="hello.js"></script>
+	<!-- 第二种嵌入js的方式：嵌入式 -->
+	<script type="text/javascript">
+		var a = '你好ma';
+		alert(a);
+	</script>
+</head>
+<body>
+	<!--第一种嵌入js方式：行间事件，不推荐使用-->
+	<input type="button" name="" value="眼眶" onclick="alert('goodbye!');">
+</body>
+</html>

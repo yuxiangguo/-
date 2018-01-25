@@ -1,0 +1,2 @@
+生成html5：  html:5 + Tab键
+注释：  Ctrl + /
