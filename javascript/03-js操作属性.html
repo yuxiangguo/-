@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03-js操作属性</title>
+	<script type="text/javascript">
+		/*window.onload 可以将全部代码加载完毕后在执行js代码
+		*/
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+			oDiv.title = "我看大了"
+			
+			var oA = document.getElementById('link1');
+			oA.href = "http://www.baidu.com"
+			oA.title = "转到百度网";
+			alert(oA.id);
+		}
+
+	</script>
+</head>
+<body>
+	<div id="div1" class="div1" title="哈喽，你好啊">这是一个div元素</div>
+	<a href="#" id="link1">百度网</a>
+
+</body>
+</html>

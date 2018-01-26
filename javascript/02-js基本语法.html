@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02-js基本语法</title>
+	<script type="text/javascript">
+		// 单行文本注释
+		/*
+			多行注释
+			变量定义:javascript 是弱类型语言
+
+		*/
+		var a = 123;
+		var A = 456;
+		var b = 'abc';
+		var c = true;
+		var d;
+
+		//alert(d);
+
+	</script>
+</head>
+<body>
+	<div id="div1" class="div1" title="哈喽，你好啊">这是一个div元素</div>
+
+	<script type="text/javascript">
+		//从上到下执行，所以写在div标签下面才有效
+		document.getElementById('div1').title="SB看不到吧";
+	</script>
+</body>
+</html>
