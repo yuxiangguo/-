@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>19-数组方法</title>
+	<script type="text/javascript">
+		
+		var aRr = [1, 2, 3, 4];
+		//var sTr = aRr.join('-');
+		var sTr = aRr.join("");
+
+		alert(sTr);
+
+		aRr.push(5);
+		alert(aRr);
+		aRr.pop();
+		alert(aRr);
+		aRr.unshift(0);
+		alert(aRr);
+		aRr.shift();
+		alert(aRr);
+		aRr.reverse();
+		alert(aRr);
+
+		var aRr2 = ['a','b','c','d','a','b','c','d'];
+		var num = aRr2.indexOf('b');
+		alert(num);
+
+		aRr2.splice(2,2);
+		alert(aRr2);
+
+		aRr2.splice(2,2,'e','f','g');
+		alert(aRr2);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>012-js函数传参</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+
+
+			changestyle('color', 'gold');
+			changestyle('background', 'red');
+			changestyle('width', '200px');
+			changestyle('height', '200px');
+			changestyle('fontSize', '100px');
+
+
+			function changestyle(styl, val){
+				oDiv.style[styl] = val;
+			}
+
+		}
+
+		
+		
+
+
+	</script>
+</head>
+<body>
+	<div id="div1">div 元素</div>
+</body>
+</html>

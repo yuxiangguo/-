@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>26-计算器</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oVal01 = document.getElementById('val01');
+			var oVal02 = document.getElementById('val02');
+			var oBtn = document.getElementById('btn');
+			var oFuhao = document.getElementById("fuhao");
+
+			oBtn.onclick = function(){
+				var val01 = oVal01.value;
+				var val02 = oVal02.value;
+				
+				var fuhao = oFuhao.value;
+
+				if(val01=="" || val02==""){
+					alert("不能输入为空，请重新输入！");
+					return;
+				}
+
+				if(isNaN(val01) || isNaN(val02)){
+					alert("请输入数字！");
+					return;
+				}
+
+				switch (fuhao){
+					case '0':
+						alert(jia(val01, val02));
+						break;
+					case '1':
+						alert(jian(val01, val02));
+						break;
+					case '2':
+						alert(chen(val01, val02));
+						break;
+					case '3':
+						alert(chu(val01, val02));
+						break;
+					default:
+						alert("输入错误，请重新输入");
+				}
+			}
+
+
+			function jia(val01, val02){
+				var c = (parseFloat(val01)*100+parseFloat(val02)*100)/100;
+				return c;paeseFloat
+			}
+			function jian(val01, val02){
+				var c = (parseFloat(val01)*100-parseFloat(val02)*100)/100;
+				return c;
+			}
+			function chen(val01, val02){
+				var c = (parseFloat(val01)*100)*(parseFloat(val02)*100)/10000;
+				return c;
+			}
+			function chu(val01, val02){
+				var c = (parseFloat(val01)*100)/(parseFloat(val02)*100);
+				return c;
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="val01">
+	<select id="fuhao">
+		<option value="0">+</option>
+		<option value="1">-</option>
+		<option value="2">*</option>
+		<option value="3">/</option>
+	</select>
+	<input type="text" name="" id="val02">
+	<input type="button" name="" value="计算" id="btn">
+</body>
+</html>
