@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>27-NaN,isNaN</title>
+	<script type="text/javascript">
+		var a = '123abc';
+		var b = '5.3asd';
+		var c = 'abc123';
+		var d = 'asd5.3';
+
+		var i = 12;
+		var j = '12';
+
+		var e = parseInt(a);
+		var f = parseFloat(b);
+		var g = parseInt(c);
+		var h = parseFloat(d);
+
+		//alert(e);// 弹出123
+		//alert(f);// 弹出5.3
+
+		//alert(g);//弹出NaN，意思为不是一个数字
+		//alert(g==NaN);//弹出false;嘛意思
+		//alert(NaN==NaN);//弹出false;嘛意思
+		//alert(e==NaN);//弹出false;嘛意思
+
+		// parseInt,parseFloat在判断NaN有问题
+		//alert(isNaN(i));//弹出false
+		//alert(isNaN(j));//弹出false
+		alert(isNaN(a));//a不是数字，弹出true
+
+		//isNaN判断是不是数字，不是数字返回true
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
