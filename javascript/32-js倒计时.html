@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>32-倒计时</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+
+			function timeleft(){
+				var now = new Date();
+				//month切记是从0到11的
+				var future = new Date(2018,0,28,23,40,0);
+				var lefts = parseInt((future-now)/1000);
+
+				var day = parseInt(lefts/86400);
+
+				var hour = parseInt((lefts%86400)/3600);
+				var minute = parseInt(((lefts%86400)%3600)/60);
+				var second = parseInt(lefts%60);
+				if(lefts<=0){
+					window.location.href = "http://wwww.baidu.com";
+				}
+
+				oDiv.innerHTML = "距离新年还有："+day+'天'+todou(hour)+'时'+todou(minute)+'分'+todou(second)+'秒';
+			}
+
+			timeleft();
+			setInterval(timeleft,1000);
+		}
+
+
+		function todou(num){
+			if(num<10){
+				num = '0' + num;
+				return num;
+			}
+			else{
+				return num;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

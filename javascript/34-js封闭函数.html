@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>34-封闭函数</title>
+	<script type="text/javascript">
+		/*
+		function myalert(){
+			var str = '欢迎访问我的主页';
+			alert(str);
+		}
+
+		myalert();
+		*/
+
+
+		//封闭函数三种写法
+		(function(){
+			var str = '欢迎访问我的主页';
+			alert(str);
+		})();
+
+		~function(){			
+			var str = '欢迎访问我的主页！';
+			alert(str); 
+		}();
+
+
+		!function(){			
+			var str = '欢迎访问我的主页！';
+			alert(str); 
+		}();
+
+
+		
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
