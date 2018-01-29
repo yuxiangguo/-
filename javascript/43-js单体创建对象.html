@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>43-单体创建对象</title>
+	<script type="text/javascript">
+		
+		var Tom = {
+			name:'tom',//居然要用逗号
+			age:18,
+
+			showname:function(){
+				alert(this.name);
+			},
+
+			showage:function(){
+				alert(this.age);
+			}
+		}
+
+		Tom.showname();
+		Tom.showage();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
