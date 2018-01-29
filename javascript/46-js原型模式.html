@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>46-原型模式</title>
+	<script type="text/javascript">
+		
+		function Person(name, age, job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+
+		}
+		Person.prototype.showname = function(){
+			alert(this.name);
+		}
+		Person.prototype.showage = function(){
+			alert(this.age);
+		}
+		Person.prototype.showjob = function(){
+			alert(this.job);
+		}
+
+		var Tom = new Person('tom', 12, 'engineer');
+		var Jack = new Person('jack', 45, 'worker');
+
+		Tom.showage = function(){
+			alert('我的年龄是' + this.age);
+		}
+
+		Tom.showage();
+		Jack.showname();
+		alert(Tom.showage==Jack.shownage);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

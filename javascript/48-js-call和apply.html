@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>48-call,apply</title>
+	<script type="text/javascript">
+		
+		function aa(a,b){
+			alert('我的this是'+this+',我的a是'+a+',我的b是'+b);
+
+		}
+		aa.call('abc', 2, 3);
+		aa.apply('ef', [2, 5]);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
