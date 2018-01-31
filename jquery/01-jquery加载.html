@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01-jquery加载</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div');
+			alert(oDiv.innerHTML);
+		}
+		/*
+		jquery写法，先弹出，ready比onload更快，不需要渲染
+		$(document).ready(function(){
+			var $div = $('#div');
+			alert($div.html()+'jqeury');
+		});
+		*/
+		$(function(){
+			var $div = $('#div');
+			alert($div.html()+'jquery');
+		});
+	</script>
+</head>
+<body>
+	<div id="div">这是一个div元素</div>
+</body>
+</html>

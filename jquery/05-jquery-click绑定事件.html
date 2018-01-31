@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05-click绑定事件</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//绑定
+			$("#btn").click(function(){
+				//重复切换样式
+				$(".box").toggleClass('sty');
+			});
+		});
+	</script>
+	<style type="text/css">
+		.box{
+			width:200px;
+			height:200px;
+			background-color:gold;
+		}
+
+		.sty{
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" name="" value="切换" id="btn">
+	<div class="box"></div>
+</body>
+</html>
