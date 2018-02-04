@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>21-绑定事件</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+
+			/*
+			$('#btn').click(function(){
+
+			})
+			*/
+			//可以绑定多个事件	
+			$('#btn').bind('click mouseover', function(){
+				alert('hello!');
+
+				//解除绑定
+				$(this).unbind('mouseover');
+			});
+
+		})
+
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="按钮" id="btn">
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>28-节点操作与html函数操作的区别</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			//html比节点操作的性能高
+
+			$('#div1').html('<a href="#">链接</a>');
+			$('#div1').append('<a href="#">链接</a>');
+
+
+		})
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<p>这是一个p元素</p>
+	</div>
+</body>
+</html>

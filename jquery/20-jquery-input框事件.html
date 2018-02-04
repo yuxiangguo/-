@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20-input框事件</title>
+	<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//获取焦点，提高用户体验，可直接获得框，不用点击选取
+			//$('#txt01').focus();
+			//获取焦点时-有光标的时候
+			$('#txt01').focus(function(){
+				//alert('focus');
+			});
+			//失去焦点时-光标离开的时候
+			$('#txt01').blur(function(){
+				//alert('blur');
+			});
+			//输入框内容变化，失去焦点后触发，反应比blur快
+			$('#txt01').change(function(){
+				alert('change');
+			});
+			//按键松开后就触发，触发频率比change要高
+			$('#txt01').keyup(function(){
+				alert('keyup');
+			});
+
+		})
+	</script>
+</head>
+<body>
+	<input type="text" name="" id="txt01">
+</body>
+</html>
